@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export function RouteGuard({ children }: { children: React.ReactNode }) {
-    const { isAuthenticated, isLoading } = useAuth();
+    const { isAuthenticated, isLoading }: any = useAuth();
     const router = useRouter();
     const pathname = usePathname();
 

@@ -17,7 +17,7 @@ export function LoginForm() {
         password: ""
     });
 
-    const { login } = useAuth();
+    const { login }: any = useAuth();
 
     const router = useRouter();
 

@@ -16,7 +16,7 @@ const DashboardPage = () => {
         }
     };
 
-    const handleError = (error) => {
+    const handleError = (error: any) => {
         console.log('Scan error:', error);
         setError('Ошибка при сканировании. Проверьте доступ к камере.');
     };
@@ -211,7 +211,7 @@ const DashboardPage = () => {
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li className="flex items-start space-x-2">
                                 <span className="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
-                                <span>Нажмите "Запустить сканер"</span>
+                                <span>Нажмите &quot;Запустить сканер&quot;</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
